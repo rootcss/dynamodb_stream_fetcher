@@ -1,0 +1,41 @@
+{
+  "name": "dynamodb_stream_fetcher",
+  "version": "1.0.0",
+  "description": "A client that fetches messages from Dynamodb streams. Is capable of handling multiple streams with single shards. Creates separate child processes to fetch data. Uses the aws-sdk API to query messages. Built to avoid use of the multilang daemon provided by awslabs.",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "aws-sdk": "^2.2.21",
+    "lodash": "^3.10.1",
+    "redis": "^2.4.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.4",
+    "mocha-sinon": "^1.1.4",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0"
+  },
+  "keywords": [
+    "dynamodb",
+    "consumer",
+    "streams",
+    "poller",
+    "aws"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootcss/dynamodb_stream_fetcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rootcss/dynamodb_stream_fetcher/issues"
+  },
+  "homepage": "https://github.com/rootcss/dynamodb_stream_fetcher#readme"
+}

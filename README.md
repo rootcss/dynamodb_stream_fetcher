@@ -5,6 +5,7 @@ stream without using the multilang daemon. It works as a simple poller by
 launching child processes for each stream that needs to be monitored.
 
 (Dynamodb-stream version of `Kinesis Stream Fetcher`)
+
 (`kinesis_stream_fetcher` - http://github.com/supersid/kinesis_stream_fetcher)
 
 Version 1.0.0 supports multiple partitions and launches a process for each paritition.
